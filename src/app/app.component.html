@@ -3,9 +3,9 @@
 </div>
 <ng-template #loggedIn>
   <div>
-    <h2>Welcome, {{ userProfile?.name }}</h2>
-    <img [src]="userProfile?.picture" alt="User Image" width="100">
-    <p>Email: {{ userProfile?.email }}</p>
+    <h2>Welcome, {{ userProfile?.['name'] }}</h2>
+    <!-- <img [src]="userProfile?.picture" alt="User Image" width="100"> -->
+    <p>Email: {{ userProfile?.['email'] }}</p>
     <button (click)="logout()">Logout</button>
   </div>
 </ng-template>
