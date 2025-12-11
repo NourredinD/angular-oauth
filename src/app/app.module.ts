@@ -4,7 +4,6 @@ import { AppComponent } from './app.component';
 import { OAuthModule } from 'angular-oauth2-oidc';
 
 @NgModule({
-  declarations: [AppComponent],
   imports: [
     BrowserModule,
     OAuthModule.forRoot(), // OAuth module initialization
